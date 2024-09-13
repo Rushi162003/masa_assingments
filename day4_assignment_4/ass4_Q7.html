@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 100%;
+    }
+    
+    th,
+    td {
+        padding: 5px;
+        /* padding-left: 20%; */
+        border: 1px solid black;
+    }
+
+    thead { 
+        background-color: green;
+    }
+</style>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity </th>
+                <th>Price per Unit</th>
+                <th>Discription</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product 1</td>
+                <td>2</td>
+                <td>$10</td>
+                <td>This is product 1</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td >Product 2</td>
+                <td>3</td>
+                <td>$20</td>
+                <td>This is product 2</td>
+                <td>60</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background-color: gainsboro;">
+                <th scope="row" colspan="4">Sum</th>
+                <th>$80</th>
+            </tr>   
+        </tfoot>
+    </table>
+</body>
+
+</html>
