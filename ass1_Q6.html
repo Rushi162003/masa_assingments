@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Navigation Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home" aria-label="Go to Home" aria-current="page" class="active">Home</a></li>
+            <li><a href="#about" aria-label="Learn more About Us">About</a></li>
+            <li><a href="#exhibits" aria-label="View Exhibits">Exhibits</a></li>
+            <li><a href="#contact" aria-label="Contact Us">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home Section</h2>
+        <p>Welcome to the exhibit home page.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Information about the exhibit.</p>
+    </section>
+
+    <section id="exhibits">
+        <h2>Exhibits</h2>
+        <p>Explore the various exhibits we have.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us.</p>
+    </section>
+
+</body>
+
+</html>
