@@ -1,111 +1,79 @@
-<!-- <html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <style>
-    
+    .parentBox {
+        display: flex;
+    }
+
+    .box {
+        margin: auto;
+        width: 23%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        padding-top: 10px;
+        border-radius: 10px;
+        /* background-color: gainsboro; */
+    }
+
+    .founder {
+        width: 100%;
+    }
+    .text {
+        text-align: center;
+    }
+
+    .logo {
+        width: 130px;
+        display: block;
+        margin: auto;
+    }
+
+    .nm {
+        margin: -15px 0 0px 0;
+    }
 </style>
 
 <body>
-    <div class="row">
-        <div class="">
-            <img src="Vijay.jpg" class="man" alt="">
-            <h4>Vijay Shekhar Sharma</h4>
-            <img class="logo" src="./pngwing.com.png"alt="">
-        </div>
+    <div class="parentBox">
         
-        <div class="col-4">
-            <img src="https://cdn.prod.website-files.com/6410c4927a4ae326761f2b26/6410fa1aa6d20215635e027c_60eddf33bd254bfba23f621f_5f30f56e0622c7dece7d7271_25_kunal%25252525252520shah%25252525252520cred.webp" class="man" alt="">
-            <h4>Vijay Shekhar Sharma</h4>
-            <img class="logo" src="./CRED.png"alt="">
+        <div class="box">
+            <img class="founder"
+                src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="">
+            <h3 class="text">Vijay Shekhar Sharma</h3>
+            <p class="text nm">Founder & CEO</p>
+            <img class="logo" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"
+                alt="">
         </div>
-        
-        <div class="col-4">
-            <img src="Vijay.jpg" class="man" alt="">
-            <h4>Vijay Shekhar Sharma</h4>
-            <img class="logo" src="./pngwing.com.png"alt="">
+        <div class="box">
+            <img class="founder"
+                src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="">
+            <h3 class="text">Kunal Shah</h3>
+            <p class="text nm">Founder</p>
+            <img class="logo" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+                alt="">
         </div>
-        
-        <div class="col-4">
-            <img src="Vijay.jpg" class="man" alt="">
-            <h4>Vijay Shekhar Sharma</h4>
-            <img class="logo" src="./pngwing.com.png"alt="">
+        <div class="box">
+            <img class="founder"
+                src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg"
+                alt="">
+            <h3 class="text">Armish Rao</h3>
+            <p class="text nm">CEO</p>
+            <img class="logo" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png"
+                alt="">
         </div>
-        
-    </div>
-</body>
-
-</html> -->
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Create four equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 25%;
-            padding: 10px;
-            height: 300px;
-            /* Should be removed. Only for demonstration */
-        }
-
-        .man {
-            height: 300px;
-            width: 100%;
-        }
-
-        .logo {
-            height: 25px;
-            width: 70px;
-            margin-left: 40%;
-            margin-top: -15px;
-        }
-
-        h4 {
-            margin-left: 30%;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    </style>
-</head>
-
-<body>
-
-
-    <div class="row">
-        <div class="column">
-            <img src="Vijay.jpg" class="man" alt="">
-            <h4>Vijay Shekhar Sharma</h4>
-            <img class="logo" src="./pngwing.com.png" alt="">
-        </div>
-        <div class="column">
-            <img src="https://cdn.prod.website-files.com/6410c4927a4ae326761f2b26/6410fa1aa6d20215635e027c_60eddf33bd254bfba23f621f_5f30f56e0622c7dece7d7271_25_kunal%25252525252520shah%25252525252520cred.webp"
-                class="man" alt="">
-            <h4>Vijay Shekhar Sharma</h4>
-            <img class="logo" src="./CRED.png" alt="">
-        </div>
-        <div class="column">
-            <img src="https://m.economictimes.com/thumb/msid-77843133,width-1200,height-900,resizemode-4,imgsize-107986/amrish-pine-labs-others.jpg"
-                class="man" alt="">
-            <h4>Vijay Shekhar Sharma</h4>
-            <img style="height: 60px;" class="logo" src="https://mma.prnewswire.com/media/812226/Pine_Labs_Logo.jpg?p=facebook" alt="">
-        </div>
-        <div class="column">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC5OOjxESWBfPmLpFxLQFrBZYO0YYmCoxp0A&s"
-                class="man" alt="">
-            <h4>Vijay Shekhar Sharma</h4>
-            <img class="logo" style="height: 50px;" src="https://static.startuptalky.com/2022/06/Instamojo-StartupTalky.jpg" alt="">
+        <div class="box">
+            <img class="founder"
+                src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg"
+                alt="">
+            <h3 class="text">Sampad Swain</h3>
+            <p class="text nm">Co-Founder & CEO</p>
+            <img class="logo" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png"
+                alt="">
         </div>
     </div>
 
