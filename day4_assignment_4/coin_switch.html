@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        /* background-color: rgb(222, 228, 241); */
+        background-color: #f5f7ff;
+        background-image:
+            linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+        background-size: 40px 40px;
+        /* Size of squares */
+        scale:1;
+    }
+
+    nav {
+
+        background-size: 10px 10px;
+        background-color: white;
+        padding-top: 1px;
+        margin-top: -10px;
+        width: 100%;
+    }
+
+    .left {
+        /* display: inline; */
+        /* padding-top: 50px; */
+        margin: 0px 0 0 150px;
+        margin-top: 30px;
+    }
+
+    .left img {
+        height: 50px;
+    }
+
+    .right {
+        text-align: end;
+        margin-top: -65px;
+        display: flex;
+        justify-content: end;
+    }
+
+    ul {
+        text-align: end;
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .right ul li {
+        font-family: Nexa, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        /* margin: 0 200px; */
+        list-style-type: none;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: #b1e50e;
+        font-family: Nexa, sans-serif;
+        width: 142px;
+        font-size: 18px;
+        margin-top: -10px;
+        height: 48px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .body {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 1200px;
+        margin-left: 200px;
+        /* background-color: #b1e50e; */
+    }
+
+    .body .img {
+        display: flex;
+        text-align: center;
+        justify-content: start;
+        margin-top: 80px;
+
+    }
+
+    .body1 img {
+        height: 50px;
+        /* width: 200px; */
+    }
+
+    .heading {
+        line-height: 30px;
+    }
+
+    .heading p {
+        font-size: 80px;
+        font-weight: 700;
+        font-family: Nexa, sans-serif;
+    }
+
+    .heading .head {
+        color: rgb(92, 140, 242);
+    }
+
+    .last-heding {
+        font-family: Nexa, sans-serif;
+        font-size: 35px;
+        width: 900px;
+        font-weight: 500;
+        line-height: 45px;
+        color: rgb(94, 91, 91);
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="">
+        </div>
+        <div class="right">
+            <ul>
+                <li>Product</li>
+                <li>Coin</li>
+                <li>Venture</li>
+                <li>Blog</li>
+                <li>Company</li>
+                <li><button type="submit">Login to pro</button></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="body">
+        <div class="body1">
+            <div class="img">
+                <p><img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt=""></p>
+            </div>
+            <div class="heading">
+                <P>Your Innovation </P>
+                <P class="head">Our Fuel </P>
+            </div>
+            <div class="last-heding">
+
+                <p style="font-weight: 540;"> CoinSwitch Ventures invests in the most promising Web3 and blockchain
+                    projects in India. Does that
+                    sound like you?</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
