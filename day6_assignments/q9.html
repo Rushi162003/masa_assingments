@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 10px 100px;
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    #price {
+        color: purple;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    #desc {
+        font-size: 18px;
+        color: gray;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    #heading {
+        font-size: 50px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        height: 25px;
+    }
+
+    #plan {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    li {
+        color: gray;
+        list-style-type: none;
+        margin: 10px;
+    }
+
+    ul li:before {
+        content: '✓';
+        color: blue;
+        font-size: larger;
+        margin-right: 10px;
+
+    }
+
+    #li {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-left: -40px;
+    }
+
+    #head {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    #head-btn {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -50px;
+    }
+
+    #btn {
+        margin-top: 50px;
+        color: gray;
+    }
+
+    #gray {
+        color: gray;
+    }
+
+    #pricing {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #head1 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1px;
+    }
+
+    #gray1 {
+        color: gray;
+    }
+
+    #pricing1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #Basic,#pro{
+        border: 1px solid rgb(40, 33, 33);
+        padding: 0 120px;
+        border-radius: 2    0px;
+    }
+    #btn button{
+        width: 35px;
+        margin: 0 10px;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 50px;
+        height: 20px;
+        position: relative;
+    }
+    #ball{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        margin-top: 2.5px;
+        margin-left: -29px;
+        background-color: white;
+    }
+    #start{
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        font-size: larger;
+        background-color: rgb(124, 15, 207);
+        margin: 10px;
+        border: none;
+        font-weight: bold;
+        color: white;
+    }
+    #Basic #start{
+        background-color: black;
+        border: 1px white solid;
+        }
+</style>
+
+<body>  
+    <section>
+        <div>
+            <p id="price">PRICING</p>
+            <p id="heading">One Price for Everything </p>
+            <p id="desc">The simplest pricing in the industary. You won't to need a calculator for this</p>
+        </div>
+        <div id="plan">
+            <div id="pro">
+                <div id="head-btn">
+                    <p id="head">Pro</p>
+                    <span id="btn">Bill Monthly<button></button><span id="ball"></span> Bill Yearly</span>
+                </div>
+                <p id="gray">Inculdes everythings you need for your professional website</p>
+                <span id="pricing">$20 </span>
+                <span id="gray"> / site / Month (billed annullay)</span>
+                <div id="li">
+                    <div id="first">
+                        <ul>
+                            <li>Custome Domain</li>
+                            <li>GDPR Solution</li>
+                            <li>Beautiful Site Design</li>
+                            <li>Super-Fast Hosting</li>
+                            <li>Analystic</li>
+                            <li>Custom Forms</li>
+                            <li>Bloging</li>
+                        </ul>
+                    </div>
+                    <div id="seccound">
+                        <ul>
+                            <li>Passrowd Protection</li>
+                            <li>Multiillugal Site</li>
+                            <li>User Mannagment</li>
+                            <li>Unlimited Pages</li>
+                            <li>Unlimited Team Members </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <button id="start">Get Started</button>
+            </div>
+
+            <div id="Basic">
+                <p id="head1">Basic</p>
+                <p id="gray1">Inculdes everythings you need for your professional website</p>
+                <p id="pricing1">Free </p>
+                <p id="gray1">Everything from Pro, except:</p>
+                <p id="gray1">- No custome Domains</p>
+                <p id="gray1">- "Made with Usmo" Branding</p>
+                <p id="gray1">No credit card limit</p>
+                <button id="start">Get Started</button> 
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
