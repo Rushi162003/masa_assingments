@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: blueviolet;
+    }
+    .grid {
+        display: grid;
+        gap: 10px;
+        width: 100%;
+            grid-template: 
+
+        "nav nav sidebar" 
+        "sec1 sec2 sidebar" 
+        ; 
+    }
+    .grid div{
+        border: 2px black solid;
+        text-align: center;
+        font-size: xx-large;
+        color: white;
+    }   
+    .sec1{
+        height:  200px;
+        background-color: brown;
+        grid-area: sec1;
+    }
+    .sec2{
+        background-color: rgb(8, 238, 177);
+        grid-area: sec2;
+    }
+    .nav{
+        height:  200px;
+        background-color: rgb(55, 16, 231);
+        grid-area: nav;
+    }
+    .sidebar{
+            background-color: red;
+        grid-area: sidebar;
+    }
+</style>
+
+<body>
+    <div class="grid">
+        <div class="sec1">1</div>
+        <div class="nav">4</div>
+        <div class="sec2">5</div>   
+        <div class="sidebar">6</div>
+    </div>
+</body>
+
+</html>
