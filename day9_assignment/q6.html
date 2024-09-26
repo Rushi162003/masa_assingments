@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .top-div {
+        background: url("https://s3-alpha-sig.figma.com/img/e4e9/4bcd/6013879f33e24c0450bcde15d215f8ae?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YLDvB8QQzl8bqKe9IIu6dmCHhQIWwuPaS08PWF-6XA1VF3CiFaM93tN69Z47qlR0hrMMcxuZzXilkyGXxIm1Z1-iiYVvnUYCIDv6uloHdh1OcGQS5qUAU~1hWLtbkyClLvtpnN404PAenBCwZSqwZaetJ3jqP4-qBGX7ZlyXH~lR7exquKPSeyRmAaPfTPdVUHofY~hfvjVP0XauTs1RaE71suphnt5TTqBjj40gz977SpKIpvNwXfCAQ6pRB97BoZV0qQ4vP087VzAgSqh8-yNJ2d0wkhIAQcQJjVoal164sWr1Xu~gCb5-eI~z68T52DrZHOJ~ltmk3GaCC3M5pg__   ");
+        width: 100%;
+        height: 860px;
+        gap: 0px;
+        opacity: 0px;
+        background-size: contain;
+        /* Ensures the image fits within the container without being cropped */
+        background-repeat: no-repeat;
+        /* Prevents the image from repeating */
+        /* background-position: center; */
+        /* Centers the image */
+        height: 1000px;
+    }
+
+    nav {
+        width: 1320px;
+        height: 88px;
+        margin-left: 300px;
+        padding: 21.94px 15px 21.93px 15px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .logo img {
+        width: 167px;
+        height: 32px;
+        top: 6.06px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+
+    .desktopNav {
+        width: 611.84px;
+        height: 44.13px;
+        left: 197px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .desktopNav ul {
+        margin-top: 4px;
+    }
+
+    .desktopNav ul li {
+        width: 101px;
+        display: inline;
+        height: 44.13px;
+        padding: 8px 19.8px 8px 20px;
+        gap: 0px;
+        border-radius: 100px 0px 0px 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 14.77px;
+        font-weight: 400;
+        line-height: 28.13px;
+        text-align: left;
+
+
+    }
+
+    .header__right {
+        width: 367.92px;
+        height: 44px;
+        top: 22px;
+        left: 937.08px;
+        gap: 15px;
+        opacity: 0px;
+        display: flex;
+        margin-top: 0px;
+    }
+
+    .header__right button {
+        width: 83.31px;
+        height: 44px;
+        left: 284.61px;
+        padding: 12px 20.8px 12px 21px;
+        gap: 0px;
+        border-radius: 50px;
+        background-color: white;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        border: 1px solid #05073C
+    }
+
+    .header__right p {
+        width: 51.47px;
+        height: 28.13px;
+        top: 7.94px;
+        left: 203.34px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .headerDropdown__button {
+
+        width: 91.86px;
+        height: 42.13px;
+        top: 0.94px;
+        left: 30px;
+        padding: 11px 19.8px 11.13px 20px;
+        gap: 0px;
+        border-radius: 200px 0px 0px 0px;
+        opacity: 0px;
+    }
+
+    nav {
+        display: flex;
+        /* justify-content: space-evenly; */
+    }
+
+    .body {
+        width: 880px;
+        height: 254px;
+        top: 147px;
+        left: 507px;
+        padding: 0px 15px 0px 15px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    h1 {
+
+        width: 664px;
+        height: 151px;
+        top: -4px;
+        margin-left: 408.09px;
+        margin-top: -30px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 72px;
+        text-align: center;
+        background: linear-gradient(90.84deg, #EE8C61 27.01%, #4C43C4 87.3%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    h1 span {
+        color: linear-gradient(90.84deg, #EE8C61 27.01%, #4C43C4 87.3%);
+        font-family: Inter;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 72px;
+        text-align: center;
+
+    }
+
+
+    .searchForm {
+        width: 850px;
+        height: 80px;
+        top: 174px;
+        left: 15px;
+        padding: 10px 0px 0px 0px;
+        gap: 0px;
+        border-radius: 50px;
+        opacity: 0px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 40px 0px #0000000D;
+        margin-left: 300px;
+    }
+
+    .searchForm__form {
+        display: flex;
+        width: 768px;
+        height: 60px;
+        margin-top: -20px;
+
+        margin-left: 50px;
+        padding: 5px 10px 5px 10px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+
+    .searchFormItem__button {
+        width: 249.33px;
+        height: 50px;
+        top: 5px;
+        left: 10px;
+        padding: 0px 60.97px 0px 0px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+
+    .searchFormItem__content {
+        width: 128.36px;
+        height: 43.59px;
+        top: 3.2px;
+        left: 60px;
+        padding: 0px 0px 1.59px 0px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+
+    .searchFormItem__icon {
+        width: 50px;
+        height: 50px;
+        padding: 15px 14.8px 15px 15px;
+        gap: 0px;
+        border-radius: 50px 0px 0px 0px;
+        opacity: 0px;
+        color: #EB662B0D;
+
+    }
+
+    h5 {
+        width: 46.67px;
+        height: 24px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 14.88px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        color: #05073C;
+    }
+
+    .searchFormItem__icoc p {
+        width: 128.56px;
+        height: 18px;
+        margin-top: -24px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 13.67px;
+        font-weight: 400;
+        line-height: 19.6px;
+        text-align: left;
+        color: #717171;
+    }
+
+    .orange {
+        width: 75px;
+        height: 60px;
+
+        margin-top: 20px;
+        left: 778px;
+        gap: 0px;
+        border-radius: 50%;
+        border: none;
+        opacity: 0px;
+        background: #EB662B;
+
+    }
+
+    .two {
+        width: 1320px;
+        height: 600px;
+        margin-top: 372px;
+        left: 300px;
+        gap: 0px;
+        opacity: 0px;
+        margin-left: 300px;
+    }
+
+    .two h2 {
+        width: 294.31px;
+        height: 45px;
+        top: 5px;
+        left: 15px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 29.88px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: left;
+        color: #05073C;
+
+    }
+
+    .head {
+        display: flex;
+        align-items: center;
+    }
+
+    .head a {
+        width: 44.79px;
+        height: 28.13px;
+        top: 21.88px;
+        margin-left: 534.41px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 14.3px;
+        font-weight: 400;
+        line-height: 28.13px;
+        text-align: left;
+        color: #05073C;
+    }
+
+    .img-gal {
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+            "one two three three"
+            "one four five six";
+    }
+
+    .left-img {
+        grid-area: one;
+        width: 410px;
+        height: 510px;
+        top: 90px;
+        left: 15px;
+        gap: 0px;
+        border-radius: 12px 0px 0px 0px;
+        opacity: 0px;
+    }
+
+    .left-img h4 {
+        width: 71.09px;
+        height: 30px;
+        top: 450px;
+        left: 30px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 19.53px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        color: #FFFFFF;
+
+    }
+
+    .featureCard__image {
+        width: 410px;
+        height: 510px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .img2 {
+        width: 300px;
+        height: 240px;
+        top: 90px;
+        grid-area: two;
+        left: 455px;
+        gap: 0px;
+        border-radius: 12px 0px 0px 0px;
+        opacity: 0px;
+
+    }
+
+    .img2 ::after {
+        width: 300px;
+        height: 240px;
+        gap: 0px;
+        opacity: 0.5px;
+        background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%);
+
+    }
+
+    .img2 img {
+        width: 300px;
+        height: 240px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+
+    .img2 h4 {
+        width: 114.97px;
+        height: 30px;
+        top: 180px;
+        left: 30px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 19.38px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        color: #FFFFFF;
+
+    }
+
+    .img3 {
+        grid-area: three;
+        width: 520px;
+        height: 240px;
+        top: 90px;
+        margin-left: -215px;
+        gap: 0px;
+        border-radius: 12px 0px 0px 0px;
+        opacity: 0px;
+
+    }
+
+    .img3 img {
+        width: 450px;
+        height: 240px;
+    }
+
+    .imt4 {
+        grid-area: four;
+    }
+
+    .img5 {
+        margin-left: -215px;
+        grid-area: five;
+    }
+
+    .img6 img {
+        width: 250px;
+        height: 240px;
+
+    }
+
+    .img6 {
+        margin-left: -325px;
+
+        grid-area: six;
+    }
+
+
+    .featureCard__image {
+
+        width: 520px;
+        height: 240px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .three {
+        width: 1320px;
+        height: 296.38px;
+        top: 1677px;
+        left: 300px;
+        gap: 0px;
+        opacity: 0px;
+        margin-top: 150px;
+    }
+
+    .div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 300px;
+    }
+
+    .svg {
+        width: 55.03px;
+        height: 37.52px;
+        top: 11.48px;
+        left: 2.59px;
+        gap: 10px;
+        opacity: 0px;
+        color: #EB662B;
+        text-align: start;
+    }
+
+    .div h3 {
+        width: 153.14px;
+        height: 27px;
+        top: 175px;
+        left: 15px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 17.72px;
+        font-weight: 500;
+        line-height: 27px;
+        text-align: left;
+        color: #05073C;
+        margin-top: 60px;
+    }
+
+    .div>div {
+        margin: 20px;
+        margin-left: 20px;
+    }
+
+    .div p {
+        width: 255.53px;
+        height: 76.25px;
+        top: 216px;
+        left: 15px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 14.88px;
+        font-weight: 400;
+        line-height: 28.13px;
+        text-align: left;
+        color: #05073C;
+    }
+
+    .three h1 {
+        text-align: start;
+        margin: 0 0 0px 250px;
+        width: 267.33px;
+        height: 45px;
+        left: 15px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inter;
+        font-size: 29.3px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: left;
+        color: #05073C;
+    }
+</style>
+
+<body>
+    <div class="top-div">
+        <nav>
+            <div class="logo">
+                <img src="./image/logo-1.svg.png" alt="">
+            </div>
+            <div class="desktopNav">
+                <ul>
+                    <li style="color:  #EB662B;">Home </li>
+                    <li>Tour </li>
+                    <li>Destination </li>
+                    <li>Activites</li>
+                    <li>Pages</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <div class="headerDropdown__button">
+                    USD
+                </div>
+                <p>Help</p>
+                <p>Sign up</p>
+                <button>Log in</button>
+            </div>
+        </nav>
+        <div class="body">
+            <h1>Life Is Adventure Make
+                <span>The Best Of It</span>
+            </h1>
+            <div class="searchForm">
+                <div class="searchForm__form">
+                    <div class="searchFormItem__button">
+                        <div class="searchFormItem__icoc">
+                            <h5>Where</h5>
+                            <p>Search destinations</p>
+                        </div>
+                    </div>
+                    <div class="searchFormItem__button">
+                        <div class="searchFormItem__icoc">
+                            <h5>When</h5>
+                            <p style="width: 175px; color: #05073C;"> February 05 ~ March 14</p>
+                        </div>
+
+                    </div>
+                    <div class="searchFormItem__button">
+                        <div class="searchFormItem__icoc">
+                            <h5 style="width: 80px;">Tour Type</h5>
+                            <p>All tour</p>
+                        </div>
+                    </div>
+                    <button class="orange"></button>
+                </div>
+            </div>
+        </div>
+        <div class="two">
+            <div class="head">
+                <h2>Popular things to do</h2>
+                <a href="#">See all</a>
+            </div>
+            <div class="img-gal">
+                <div class="left-img">
+                    <div class="featureCard__image">
+                        <img src="./image/Link1.png" alt="">
+                    </div>
+                    <!-- <h4>Cruises</h4> -->
+                </div>
+                <div class="img2">
+                    <div class="featureCard__image">
+                        <img src="./image/Link.png" alt="">
+                    </div>
+                    <h4>Beach Tours</h4>
+                </div>
+                <div class="img3">
+                    <div class="featureCard__image">
+                        <img src="./image/Link (1).png" alt="">
+                    </div>
+                </div>
+                <div class="img4">
+                    <div class="featureCard__image">
+                        <img src="./image/Link (2).png" alt="">
+                    </div>
+                </div>
+                <div class="img5">
+                    <div class="featureCard__image">
+                        <img src="./image/Link (3).png" alt="">
+                    </div>
+                </div>
+                <div class="img6">
+                    <div class="featureCard__image">
+                        <img src="./image/Link (4).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="three">
+            <h1 style="color: black;"> Why choose Tourz</h1>
+            <div class="div">
+                <div>
+                    <div class="svg">
+                        <img src="./image/ticket.svg.png" alt="">
+                    </div>
+                    <h3>Ultimate flexibility</h3>
+                    <p>You're in control, with free
+                        cancellation and payment options to
+                        satisfy any plan or budget.</p>
+                </div>
+                <div>
+                    <div class="svg">
+                        <img src="./image/ticket.svg.png" alt="">
+                    </div>
+                    <h3>Ultimate flexibility</h3>
+                    <p>You're in control, with free
+                        cancellation and payment options to
+                        satisfy any plan or budget.</p>
+                </div>
+                <div>
+                    <div class="svg">
+                        <img src="./image/ticket.svg.png" alt="">
+                    </div>
+                    <h3>Ultimate flexibility</h3>
+                    <p>You're in control, with free
+                        cancellation and payment options to
+                        satisfy any plan or budget.</p>
+                </div>
+                <div>
+                    <div class="svg">
+                        <img src="./image/ticket.svg.png" alt="">
+                    </div>
+                    <h3>Ultimate flexibility</h3>
+                    <p>You're in control, with free
+                        cancellation and payment options to
+                        satisfy any plan or budget.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
