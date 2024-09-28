@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    body {
+        overflow: hidden;
+        background-color: #ffba25;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        font-size: xx-large;
+        font-weight: bold;
+        animation: move 4s infinite ease-out, color 4s ease-in-out 10s;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateX(-50%);
+            color: white;
+        }
+
+        100% {
+            transform: translateX(150%);
+        }
+
+    }
+
+    .left {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .right div {}
+
+    i {
+        padding: 30px 20px;
+        border-radius: 50%;
+        background-color: #ffcc5f;
+    }
+
+    .middle {
+        position: relative;
+            width: 600px;
+            height: 600px;
+        animation: rotateCircle 3s  infinite;
+    }
+
+    @keyframes rotateCircle {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(90deg);
+
+        }
+        
+    }
+    .icon {
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .icon1 {
+        top: 20%;
+        left: 50%;
+    }
+
+    .icon2 {
+        top: 30%;
+        left: 70%;
+    }
+
+    .icon3 {
+        top: 50%;
+        left: 80%;
+    }
+
+    .icon4 {
+        top: 70%;
+        left: 70%;
+    }
+
+    .icon5 {
+        top: 80%;
+        left: 50%;
+    }
+
+    .icon6 {
+        top: 70%;
+        left: 30%;
+    }
+
+    .icon7 {
+        top: 50%;
+        left: 20%;
+    }
+
+    .icon8 {
+        top: 30%;
+        left: 30%;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <p>Pay Bill Instantly</p>
+        </div>
+        <div class="right">
+            <div class="middle ">
+                <i class="icon icon1 fa-solid fa-phone fa-2xl"></i>
+                <i class="icon icon2 fa-solid fa-laptop fa-2xl"></i>
+                <i class="icon icon3 fa-brands fa-twitter fa-2xl"></i>
+                <i class="icon icon4 fa-brands fa-facebook fa-2xl"></i>
+                <i class="icon icon5 fa-brands fa-youtube fa-2xl"></i>
+                <i class="icon icon6 fa-regular fa-lightbulb fa-2xl"></i>
+                <i class="icon icon7 fa-solid fa-camera fa-2xl"></i>
+                <i class="icon icon8 fa-solid fa-home fa-2xl"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
