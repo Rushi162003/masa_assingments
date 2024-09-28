@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+    body {
+      background-color: yellow;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #f1f1f1;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .image {
+      background-color: blue;
+      color: white;
+      width: 200px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .content {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .text {
+      margin-bottom: 10px;
+    }
+
+    .read-more {
+      color: blue;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .image {
+        margin: 0 0 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image">Image</div>
+    <div class="content">
+      <div class="title">Title</div>
+      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vero deleniti incidunt rem.</div>
+      <a href="#" class="read-more">Read more</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image">Image</div>
+    <div class="content">
+      <div class="title">Title</div>
+      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vero deleniti incidunt rem.</div>
+      <a href="#" class="read-more">Read more</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image">Image</div>
+    <div class="content">
+      <div class="title">Title</div>
+      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vero deleniti incidunt rem.</div>
+      <a href="#" class="read-more">Read more</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="image">Image</div>
+    <div class="content">
+      <div class="title">Title</div>
+      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vero deleniti incidunt rem.</div>
+      <a href="#" class="read-more">Read more</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="image">Image</div>
+    <div class="content">
+      <div class="title">Title</div>
+      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vero deleniti incidunt rem.</div>
+      <a href="#" class="read-more">Read more</a>
+    </div>
+  </div>
+
+</body>
+</html>
